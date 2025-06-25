@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Feedback - CitizenAI{% endblock %}
+
+{% block content %}
+<main class="feedback-section">
+    <div class="form-box">
+        <h2>Give Feedback</h2>
+        <form method="post" action="{{ url_for('feedback') }}">
+            <textarea name="feedback" placeholder="Tell us what you think..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if sentiment %}
+            <p class="sentiment-response">Our system read your feedback as: <strong>{{ sentiment }}</strong></p>
+        {% endif %}
+    </div>
+</main>
+{% endblock %}

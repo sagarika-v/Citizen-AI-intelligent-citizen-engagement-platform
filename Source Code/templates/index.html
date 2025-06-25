@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Home - CitizenAI{% endblock %}
+
+{% block content %}
+<div class="response-output">
+    {{ response_text | urlize(nofollow=True, target='_blank') | safe }}
+</div>
+
+<main class="hero-section">
+    <div class="hero-content">
+        <h2>Empowering Citizens Through AI</h2>
+        <p>
+            Personal civic assistant to navigate and improve your community.
+            CitizenAI is your intelligent assistant for civic engagement.
+            From accessing services to sharing feedback, our AI-powered platform
+            helps citizens and government communicate better.
+        </p>
+        {% if 'username' in session %}
+            <a href="{{ url_for('dashboard') }}" class="cta-button">Go to Dashboard</a>
+        {% else %}
+            <a href="{{ url_for('login') }}" class="cta-button">Get Started</a>
+        {% endif %}
+    </div>
+</main>
+{% endblock %}

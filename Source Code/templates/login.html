@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Login - CitizenAI{% endblock %}
+
+{% block content %}
+<main class="hero-split">
+    <div class="hero-visual"></div>
+    <div class="login-box">
+        <!-- Your form elements go here -->
+        <h2>Login to CitizenAI</h2>
+        <form method="post" action="{{ url_for('login') }}">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="redirect-text">
+            Don't have an account?
+            <a href="{{ url_for('signup') }}">Sign up here</a>
+        </p>
+    </div>
+</main>
+{% endblock %}

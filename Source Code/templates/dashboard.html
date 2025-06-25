@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard - CitizenAI{% endblock %}
+
+{% block content %}
+<main class="dashboard-section">
+    <div class="dashboard-box">
+        <h2>Citizen Insights Dashboard</h2>
+
+        <div class="sentiment-cards">
+            <div class="card positive">Positive: {{ sentiments.positive }}</div>
+            <div class="card neutral">Neutral: {{ sentiments.neutral }}</div>
+            <div class="card negative">Negative: {{ sentiments.negative }}</div>
+        </div>
+
+        <div class="issues-section">
+            <h3>Recent Citizen Issues</h3>
+            <ul>
+                {% for issue in issues %}
+                    <li>{{ issue }}</li>
+                {% else %}
+                    <li>No issues reported yet.</li>
+                {% endfor %}
+            </ul>
+
+            <form action="{{ url_for('report_issue') }}" method="post">
+                <textarea name="issue" placeholder="Describe the issue..." required></textarea>
+                <button type="submit">Report Issue</button>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}

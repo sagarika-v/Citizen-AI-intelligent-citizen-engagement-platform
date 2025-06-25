@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Chat - CitizenAI{% endblock %}
+
+{% block content %}
+<main class="chat-section">
+    <div class="chat-box">
+        <h2>Ask CitizenAI</h2>
+        <form method="post" action="{{ url_for('chat') }}">
+            <label for="question">Your Question:</label>
+            <input type="text" name="question" placeholder="e.g. How do I apply for a voter ID?" required>
+            <button type="submit">Ask</button>
+        </form>
+
+        {% if response %}
+            <div class="chat-response">
+                <h3>Answer:</h3>
+                <!-- ✅ CHANGE HERE -->
+                <p style="white-space: pre-line;">{{ response }}</p>
+            </div>
+        {% endif %}
+    </div>
+</main>
+{% endblock %}
