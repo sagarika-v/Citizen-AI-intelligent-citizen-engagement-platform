@@ -68,15 +68,21 @@ pip install -r requirements.txt
 
    
 📸 Screenshots
- #Home Page 
+
+ # Home Page 
  ![Screenshot 2025-06-25 140109](https://github.com/user-attachments/assets/8a7f6e7f-5806-4294-956c-c284c607485c)
- #About page
+ # About page
  ![Screenshot 2025-06-25 140452](https://github.com/user-attachments/assets/e9264142-b5ed-4949-98e2-bc5b9ae75943)
- #chatbot interface
+ # Login page
+ ![Screenshot 2025-06-25 141553](https://github.com/user-attachments/assets/57bcadbc-ea6b-493c-afdf-e4c818d5afdb)
+ # Signup page
+ ![Screenshot 2025-06-25 142153](https://github.com/user-attachments/assets/106922c8-87f8-4f7c-891e-fc2c965c0ed9)
+
+ # chatbot interface
  ![Screenshot 2025-06-25 142424](https://github.com/user-attachments/assets/612b60d0-acda-4991-ac46-81c3f1b252ab)
- #Dashboard interface
+ # Dashboard interface
  ![Screenshot 2025-06-25 144855](https://github.com/user-attachments/assets/72772b8c-001d-4544-8bbd-1e31b9ffb28f)
- #Sentiment result output
+ # Sentiment result output
  ![Screenshot 2025-06-25 143859](https://github.com/user-attachments/assets/36693119-e59e-41b7-9c26-c5369b41051f)
  ![Screenshot 2025-06-25 143956](https://github.com/user-attachments/assets/5d67e17a-3678-4b01-9fc0-d2cb7f148835)
  ![Screenshot 2025-06-25 144127](https://github.com/user-attachments/assets/cc126ff3-c466-4063-b6dd-c0188347c644)
